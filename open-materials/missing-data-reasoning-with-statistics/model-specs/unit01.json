@@ -1,0 +1,39 @@
+{
+  "bounds": "S is sum of all observed keyed stress cells; k is total unobserved cells among 5*N target cells. Lower=(S+k)/(5*N), upper=(S+5*k)/(5*N). Support bounds, not confidence intervals.",
+  "display_profiles": {
+    "counts": "integer",
+    "item_bounds": "five decimals, exact for denominator 8000",
+    "observed_mean": "three decimals",
+    "person_bounds": "six decimals, exact for denominator 8000",
+    "proportions": "one decimal percent"
+  },
+  "example_selection": "lexicographically first complete stress record with raw st4 different from 3",
+  "full_roster_benchmark_used": false,
+  "groups": "part_time=0 or 1 from invitation frame; response/complete counts and proportions",
+  "inference_scope": "observed subset description and finite-roster support bounds; no MAR model, imputation, sampling CI or World reveal",
+  "items": [
+    "st1",
+    "st2",
+    "st3",
+    "st4",
+    "st5"
+  ],
+  "ordinary_inputs": [
+    "anchor_participants.csv",
+    "anchor_baseline.csv"
+  ],
+  "patterns": "five bits in st1..st5 order, 1=observed; all invitees represented",
+  "person_bounds": "use complete-person keyed total and replace every incomplete person by five cells at lower/upper support; diagnostic comparison only",
+  "population_n": 1600,
+  "raw_support": [
+    1,
+    5
+  ],
+  "reverse_item": "st4",
+  "score": "mean of all five keyed responses; incomplete scores stay blank",
+  "serialization": "17 significant digits for numerical outputs; original IDs and five-bit strings exact",
+  "target_id": "B8-T01",
+  "unit": 1,
+  "weighting": "equal invited-person",
+  "worked_example_id": "S1000118"
+}

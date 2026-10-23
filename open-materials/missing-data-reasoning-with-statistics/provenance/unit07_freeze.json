@@ -1,0 +1,13 @@
+{
+  "files": {
+    "data/anchor_baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
+    "data/anchor_participants.csv": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e",
+    "model-specs/unit07.json": "ec9e253d2e176fbf6bc7356410942ff3dbf7fd2d943365fd131727a1759dba6f",
+    "model-specs/unit07_r.csv": "44f1b993ed86b5faa8c1ed2c9bd8959afbc44db2149506dcc82a51d6f0ef953f"
+  },
+  "no_hidden_truth_or_reveal": true,
+  "no_random_tape": "EM and direct observed-likelihood Newton deterministic; no simulated missing answers",
+  "schema_version": 1,
+  "stage": "frozen before first Unit7 computation; established input knowledge disclosed",
+  "target_boundary": "B8-M07 added; B8-D06 and B8-T01/02/03 unchanged"
+}

@@ -1,0 +1,31 @@
+{
+  "case_id": "B8-EXT-B-ITEMS",
+  "data": "extension_b.csv",
+  "enumeration": "complete records identify profiles; enumerate every ordered profile assignment for incomplete people; Dirichlet posterior predictive rising-factorial masses; condition on matching items only for item route",
+  "exclusions": [
+    "latent trait modeling",
+    "general ordinal FCS",
+    "universal item-imputation superiority",
+    "Tonmick full-score model repair",
+    "causal or frequentist interval"
+  ],
+  "item_route": "condition on every recorded raw item; integrate unknown compatible profile assignments and theta; report exact finite-roster posterior moments",
+  "items": [
+    "st1",
+    "st2",
+    "st3",
+    "st4",
+    "st5"
+  ],
+  "link": "recording pattern treated as ignorable for profile probabilities under the teaching law; no claim it holds in Tonmick; complete-score coarsening discards useful observed items here",
+  "model": "iid response profiles conditional on four shared class probabilities with Dirichlet(1,1,1,1) prior; support is exactly the four declared profiles, a strong hypothetical restriction",
+  "n": 6,
+  "no_missing": "both routes give exact observed finite mean and zero posterior variance; no artificial completed copies",
+  "prior_knowledge": "Four support profiles and all ordinary values/Unit5 warning known. Hand-derived item-route evidence1/84 and mean25/9; score-only mean3; five recorded partial-item answers are discarded by score coarsening. No hidden truth or model repair claimed.",
+  "prior_per_profile": 1,
+  "profiles": "extension_b_profiles.csv",
+  "reverse_item": "st4",
+  "schema_version": 1,
+  "score_route": "retain only complete five-item scores and coarsen every incomplete record to a missing whole score; use the same profile law and prior; outputs are score-level inference conditional on deliberately less information, not an item-consistent completed file",
+  "target": "finite full keyed five-item mean across six fictional people; same target and underlying joint profile law for both information routes"
+}

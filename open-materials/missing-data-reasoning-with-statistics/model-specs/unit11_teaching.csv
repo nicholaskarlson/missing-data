@@ -1,0 +1,13 @@
+fixture,id,college_id,offer,wb1,wb2,wb3,wb4,wb5
+gaps,00,C,0,2,2,2,4,2
+gaps,01,C,0,4,4,4,2,4
+gaps,02,C,0,,,,,
+gaps,10,C,1,4,4,4,2,4
+gaps,11,C,1,5,5,5,1,5
+gaps,12,C,1,,,,,
+complete,00,C,0,2,2,2,4,2
+complete,01,C,0,4,4,4,2,4
+complete,02,C,0,3,3,3,3,3
+complete,10,C,1,4,4,4,2,4
+complete,11,C,1,5,5,5,1,5
+complete,12,C,1,4,4,4,2,4

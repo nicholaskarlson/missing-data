@@ -1,0 +1,17 @@
+key,value
+available_mean,2.6000000000000001
+available_mean_n,5
+data/discarded_partial_cells,5
+data/full_scores,2
+data/n,6
+data/observed_item_cells,15
+data/partial_people,3
+data/state_count,256
+item/evidence,0.011904761904761904
+item/mean,2.7777777777777777
+item/variance,0.079012345679012344
+logical_lower,1.9333333333333333
+logical_upper,3.9333333333333331
+score/evidence,1
+score/mean,3
+score/variance,0.43174603174603177

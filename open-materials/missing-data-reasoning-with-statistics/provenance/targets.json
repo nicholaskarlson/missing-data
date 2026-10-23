@@ -1,0 +1,70 @@
+{
+  "amendment": "targets-measurement-companion-v020",
+  "schema_version": 1,
+  "targets": [
+    {
+      "benchmark": "private World derived/v1.2.0/author/baseline_stress_complete.csv",
+      "benchmark_status": "constructed in prerequisite; aggregate intentionally not computed/frozen",
+      "estimand": "finite-roster full five-item stress mean",
+      "exclusions": [
+        "latent trait mean",
+        "whole-system design-weighted mean"
+      ],
+      "id": "B8-T01",
+      "ordinary_input": "observed baseline items and invitation frame only",
+      "policy": "baseline, no offer contrast",
+      "population": "1600 original anchor invitees",
+      "support": [
+        1,
+        5
+      ],
+      "time": "baseline pre-offer reference administration",
+      "uncertainty": "analysis method and assumptions pending Unit 1/5; benchmark is a finite-roster value",
+      "variable": "mean(st1,st2,st3,6-st4,st5)",
+      "weighting": "equal invited-person"
+    },
+    {
+      "benchmark": "college-standardized realized complete-score assigned-arm difference",
+      "benchmark_status": "realized descriptive benchmark available in original complete items; paired item-score causal truth unavailable",
+      "estimand": "college-standardized average offer potential-score contrast in the randomized population",
+      "exclusions": [
+        "uptake effect",
+        "all-invitee effect",
+        "paired latent trajectory effect"
+      ],
+      "id": "B8-T02",
+      "ordinary_input": "observed follow-up and original assignment/frame only",
+      "policy": "offer versus no offer, regardless of uptake",
+      "population": "1219 original college-block randomized baseline respondents",
+      "support": [
+        1,
+        5
+      ],
+      "time": "12 months",
+      "uncertainty": "stratified randomization and missing-outcome assumptions/variance must be specified for Unit 9; no CI implemented",
+      "variable": "mean(wb1,wb2,wb3,6-wb4,wb5)",
+      "weighting": "college respondent-count shares N_c/1219"
+    },
+    {
+      "benchmark": "known-event fraction and logical unknown-label bounds; complete-outcome reveal pending",
+      "benchmark_status": "observed audit implemented; full risk not point-identified without assumptions",
+      "estimand": "finite-roster withdrawal fraction under that realized policy mixture",
+      "exclusions": [
+        "17.0 percent response-share no-offer standardization as raw risk",
+        "no-transfer risk"
+      ],
+      "id": "B8-T03",
+      "ordinary_input": "canonical withdrawal_label and outcome_known in observed registry",
+      "policy": "realized mixed offer assignment among respondents; no offer/no uptake among nonrespondents under v1.1.0 observation policy",
+      "population": "1600 original anchor invitees",
+      "support": [
+        0,
+        1
+      ],
+      "time": "withdrawal before transfer by 12 months",
+      "uncertainty": "logical bounds are not confidence intervals; selection/censoring adjustments pending",
+      "variable": "binary withdrawal outcome, preserving 11 unknown labels",
+      "weighting": "equal invited-person"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+name,value
+model,iid_normal_intercept_only
+observed_n,6
+total_n,8
+imputations,8
+variance_df,5
+prior,1/sigma2

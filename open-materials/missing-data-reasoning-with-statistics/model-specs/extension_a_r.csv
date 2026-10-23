@@ -1,0 +1,11 @@
+name,value
+n,6
+low,1
+high,5
+prior_high,1
+prior_low,1
+replicates,32
+max_m,800
+grid,5|20|50|200|565|800
+epsilon,.02
+boundary_margin,1e-12

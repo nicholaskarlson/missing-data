@@ -1,0 +1,14 @@
+{
+  "files": {
+    "data/anchor_baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
+    "data/anchor_participants.csv": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e",
+    "model-specs/unit08.json": "d94a361f50857edd5ae56991dba46ff21043e1e4749089c9e5c76b0e49dfa609",
+    "model-specs/unit08_population.csv": "9e49ac04ea1ef4fe56ed89791a4dbbd6139195fd88b3a9465c8ef964a72cb4ad",
+    "model-specs/unit08_r.csv": "eb87ff6970b610a43ba8351192ebc2fa2be1c88341aebc08210282f3fdba16b8"
+  },
+  "hidden_or_reveal_used": false,
+  "no_random_tape": true,
+  "original_targets_and_native_math_unchanged": true,
+  "schema_version": 1,
+  "stage": "before first new Unit8 computation; earlier observed/World knowledge disclosed"
+}

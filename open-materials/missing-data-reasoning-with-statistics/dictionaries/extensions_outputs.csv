@@ -1,0 +1,61 @@
+case,key,meaning,scope
+extension_a,epsilon,absolute MCSE tolerance in score units,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/20/empirical_rmse,grid 20 empirical rmse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/20/estimated_mcse,grid 20 estimated mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/20/exact_mcse,grid 20 exact mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/20/replicate1_error,grid 20 replicate1 error,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/20/replicate1_mean,grid 20 replicate1 mean,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/200/empirical_rmse,grid 200 empirical rmse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/200/estimated_mcse,grid 200 estimated mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/200/exact_mcse,grid 200 exact mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/200/replicate1_error,grid 200 replicate1 error,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/200/replicate1_mean,grid 200 replicate1 mean,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/5/empirical_rmse,grid 5 empirical rmse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/5/estimated_mcse,grid 5 estimated mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/5/exact_mcse,grid 5 exact mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/5/replicate1_error,grid 5 replicate1 error,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/5/replicate1_mean,grid 5 replicate1 mean,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/50/empirical_rmse,grid 50 empirical rmse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/50/estimated_mcse,grid 50 estimated mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/50/exact_mcse,grid 50 exact mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/50/replicate1_error,grid 50 replicate1 error,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/50/replicate1_mean,grid 50 replicate1 mean,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/565/empirical_rmse,grid 565 empirical rmse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/565/estimated_mcse,grid 565 estimated mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/565/exact_mcse,grid 565 exact mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/565/replicate1_error,grid 565 replicate1 error,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/565/replicate1_mean,grid 565 replicate1 mean,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/800/empirical_rmse,grid 800 empirical rmse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/800/estimated_mcse,grid 800 estimated mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/800/exact_mcse,grid 800 exact mcse,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/800/replicate1_error,grid 800 replicate1 error,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,grid/800/replicate1_mean,grid 800 replicate1 mean,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,law/0/prob,law 0 prob,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,law/0/q,law 0 q,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,law/1/prob,law 1 prob,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,law/1/q,law 1 q,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,law/2/prob,law 2 prob,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,law/2/q,law 2 q,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,missing_n,missing n,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,n,n,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,observed_n,observed n,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,posterior_mean,exact model-conditional finite-roster posterior mean,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,posterior_sd,posterior sd,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,posterior_variance,"posterior variance, distinct from Monte Carlo variance",hypothetical teaching law; not Tonmick validation or interval coverage
+extension_a,required_m,independent-draw count for the declared point-mean MCSE tolerance,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,available_mean,available-item description among people with any answer,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,available_mean_n,available mean n,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,data/discarded_partial_cells,data discarded partial cells,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,data/full_scores,data full scores,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,data/n,data n,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,data/observed_item_cells,data observed item cells,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,data/partial_people,data partial people,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,data/state_count,data state count,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,item/evidence,item evidence,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,item/mean,item mean,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,item/variance,item variance,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,logical_lower,model-free full-item lower support,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,logical_upper,model-free full-item upper support,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,score/evidence,score evidence,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,score/mean,score mean,hypothetical teaching law; not Tonmick validation or interval coverage
+extension_b,score/variance,score variance,hypothetical teaching law; not Tonmick validation or interval coverage

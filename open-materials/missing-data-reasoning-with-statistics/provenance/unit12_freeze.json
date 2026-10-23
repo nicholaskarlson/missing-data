@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-22T17:07:30.090901+00:00",
+  "files": {
+    "data/anchor_baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
+    "data/anchor_followup.csv": "ab385f2fd760d5f5dd0ef75f0075b91c6e82a98270d329078c9eadcb917a972f",
+    "data/anchor_participants.csv": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e",
+    "model-specs/unit12.json": "10184eec3957f339580a710b4952381ad27ef30b75c11eef48785fd3f62ed8d6",
+    "model-specs/unit12_r.csv": "cb740d3b068a53dd5b106c49c3315e92998933b81b576cf9fed40a014ee08174",
+    "model-specs/unit12_teaching.csv": "5e6ba1d863f348cc15d1b732844dc5a597f01d153e33e87c4259c82b27aafb13"
+  },
+  "hidden_or_reveal_used": false,
+  "prior_knowledge": "All preceding ordinary results/design descriptions, existing956 respondents and312/317/327 forms known before freeze. The pair-square bound and small-fixture hand derivations (target3, mixed variance13/400, selective mixed H2.7, unequal-block target3.4) were derived before scripted computation. Not blind preregistration. No complete/hidden/reveal Tonmick outcomes or World files used.",
+  "schema_version": 1,
+  "stage": "before first scripted Unit12 numerical calculation"
+}

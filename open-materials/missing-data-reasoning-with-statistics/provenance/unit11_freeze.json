@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-22T06:55:55.909475+00:00",
+  "files": {
+    "data/anchor_baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
+    "data/anchor_followup.csv": "ab385f2fd760d5f5dd0ef75f0075b91c6e82a98270d329078c9eadcb917a972f",
+    "data/anchor_participants.csv": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e",
+    "model-specs/unit11.json": "57ead923d1684608111e3d12a39f2c8e230e9baa2a6aaef30960c251cf9765a0",
+    "model-specs/unit11_r.csv": "efe6390fc28e5ce689a8c1cf12912ce275a4712c1d834e727bb87fc7d0307f56",
+    "model-specs/unit11_teaching.csv": "8eefa62ac17152e6afde8e5a295c71186cbd5a846c032cdb1c1739fa23f0ca35"
+  },
+  "hidden_or_reveal_used": false,
+  "prior_knowledge": "Current ordinary records, all previous units including Unit9 contrast/support and original World design descriptions known before this new freeze. Not blind preregistration. No complete/hidden/reveal records used to select grid, model or paths. Grid fixed before first Unit11 calculation.",
+  "schema_version": 1,
+  "stage": "before first Unit11 calculation"
+}

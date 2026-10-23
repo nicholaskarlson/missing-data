@@ -1,0 +1,77 @@
+{
+  "categorical_rule": "smallest category whose cumulative theta exceeds u; refuse if any u is within 1e-10 of an internal cumulative boundary; no jitter, redraw or clipping",
+  "category_boundary_margin": 1e-10,
+  "completion": "leave every observed raw response byte-value unchanged; inverse-CDF draw keyed 1..5 for each missing cell; convert keyed st4 back to raw 6-keyed; full five-item mean for every invitee",
+  "diagnostic": "on complete-score respondents, center each keyed item by its complete-score subgroup mean, pool cross-products across the four frame groups; report each of ten within-group residual correlations; flag max absolute correlation > .10 (predeclared teaching flag, not a test). Selection into complete scores can also contribute; diagnostic cannot distinguish model from response-assumption failure.",
+  "display": "means/bounds 5 decimals; SD/MCSE 6 decimals; counts integer; all numerical CSVs 17 significant digits",
+  "draws": "independent Gamma(alpha_gjk,scale=1) quantiles of declared uniform primitives, normalized across five categories; one theta per group/item shared by all its missing cells within a completion",
+  "failures": [
+    "duplicate/missing IDs or inconsistent joins",
+    "invalid binary frame/response flags",
+    "raw item outside blank or 1..5",
+    "empty frame group or no observed answers for a group/item",
+    "missing/extra/reordered/duplicate/nonfinite/out-of-open-unit-interval tape entries",
+    "invalid gamma, simplex or categorical-boundary ambiguity",
+    "nonfinite or negative moments",
+    "observed-cell modification or support violation"
+  ],
+  "gamma_numeric": "scalar lower incomplete-gamma series/upper continued fraction with 2000-iteration ceiling and 2e-15 convergence, quantile bisection; NumPy 384-node Gauss-Legendre density integration and vector bisection; base R qgamma; fail on invalid or nonconvergent values",
+  "group_definition": "part_time then first_gen, both completely observed frame variables",
+  "groups": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "identification": "joint missingness pattern ignorable for item values conditional only on these two frame variables, with distinct response parameters; conditional independence and exchangeability are additional restrictions, not consequences of MAR",
+  "imputations": 20,
+  "items": [
+    "st1",
+    "st2",
+    "st3",
+    "st4",
+    "st5"
+  ],
+  "likelihood": "within each frame group and item, observed keyed responses are iid categorical with probabilities theta_gj; item responses independent across items conditional on group and theta; item/group probability vectors independent a priori",
+  "model_id": "B8-U05-DIR-001",
+  "monte_carlo": "Q per completion, Qbar, sample variance B with m-1; estimated MCSE sqrt(B/m) and exact-model MCSE sqrt(analytic_variance/m); compare to analytic model moments without a stochastic pass/fail closeness test",
+  "n": 1600,
+  "no_missing": "bypass primitives and completions; finite target mean equals observed census value, posterior variance and all MC measures zero; no synthetic repeated copies",
+  "posterior": "alpha_gjk = observed keyed count + 1; independent Dirichlet(alpha_gj) across group/item",
+  "posterior_bound": "Chebyshev conditional posterior probability at least .95 on [mean-sqrt(variance/.05),mean+sqrt(variance/.05)], intersected with the observed-data support bounds. Conservative, not central 95%, not a frequentist coverage guarantee.",
+  "posterior_moments": "for cell group/item: A=sum(alpha), mu=sum(k*alpha_k)/A, v=sum(k*k*alpha_k)/A-mu^2, m=number missing; E(sum_missing)=m*mu, Var(sum_missing)=m*(A+m)*v/(A+1). Sum independent cells and divide mean by 5N and variance by (5N)^2. Observed keyed total fixed.",
+  "prior": "independent Dirichlet(1,1,1,1,1) for each group/item; total prior concentration 5, prior mean score 3",
+  "prior_per_category": 1,
+  "reverse_item": "st4",
+  "schema_version": 1,
+  "scope_exclusions": [
+    "hidden completed score benchmarks",
+    "latent trait inputs",
+    "claim of MNAR repair",
+    "causal or stress-withdrawal regression",
+    "general FCS",
+    "coverage study",
+    "universal choice m=20",
+    "claim conditional item independence is plausible in Tonmick"
+  ],
+  "support": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "target": "finite-roster full keyed five-item stress mean, all 1600 invitees, equal-person weighting",
+  "target_id": "B8-T01",
+  "tolerance": {
+    "absolute": 1e-11,
+    "relative": 1e-11
+  },
+  "truth_used": false,
+  "uncertainty": "model-conditional finite-roster posterior variance, not a superpopulation sampling SE. Complete-data target variance is zero once all target cells are known. Do not attach the regression pilot U or its t interval.",
+  "uniform_order": "imputation 1..20; posterior role keys group/item/category in sorted group, st1..st5, 1..5 order; then cell role student_id/item for all originally missing cells, student-ID/item order",
+  "unit": 5,
+  "variance_parts": "expected conditional residual variance = m*A*v/(A+1); shared parameter component = m*m*v/(A+1); add before dividing by (5N)^2",
+  "worked_example_id": "S1000218",
+  "worked_example_selection": "first baseline respondent in lexicographic student_id order with any blank stress item"
+}

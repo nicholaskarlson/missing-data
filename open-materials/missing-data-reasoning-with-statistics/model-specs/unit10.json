@@ -1,0 +1,30 @@
+{
+  "boundary": "No hidden World files, complete Tonmick outcomes or reveal inputs used",
+  "case_id": "B8-U10-CENSORED-EVENTS",
+  "censoring_link": "Within each declared group, uncensored at-risk histories represent the unavailable subsequent event histories, with sufficient follow-up support. Not established from these data. No independence of event types assumed.",
+  "clock": "exact recorded decimal text; at most three decimals, no jitter/unrounding",
+  "event_of_interest": "withdrawal before transfer by month12 under actual mixed policy",
+  "finite_target": "AJ is an assumption-dependent plug-in candidate for the finite roster, not its exact identified fraction",
+  "grid_ticks": [
+    0,
+    3000,
+    6000,
+    9000,
+    12000
+  ],
+  "groups": [
+    "control",
+    "offered",
+    "nonrespondents"
+  ],
+  "horizon_ticks": 12000,
+  "n": 1600,
+  "prior_knowledge": "Supplied handoff numerical anchors, observed counts, policy and previous units known before this rebuilt freeze; not blind preregistration. Earlier Unit10 files not recovered; no retrospective pooled-spec amendment invented.",
+  "schema_version": 1,
+  "standardization": "original invitation shares, separately fitted observation-policy groups",
+  "target_id": "B8-T03",
+  "ticks_per_month": 1000,
+  "tie_rule": "pre-exit risk set including tied censors; both event increments use preceding event-free mass; then remove all tied exits",
+  "toy_file": "model-specs/unit10_histories.csv",
+  "uncertainty": "logical binary-support bounds only; no confidence interval or causal no-transfer interpretation"
+}

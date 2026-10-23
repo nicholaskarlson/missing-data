@@ -1,0 +1,40 @@
+{
+  "boundary_margin": 1e-12,
+  "case_id": "B8-EXT-A-MC",
+  "choice": "ceil(posterior_variance/epsilon^2), minimum2; criterion concerns RMS Monte Carlo error of a point mean, not interval/SE reproducibility or a per-run guarantee",
+  "data": "extension_a.csv",
+  "epsilon": "0.02",
+  "exclusions": [
+    "MCMC chain effective sample size",
+    "standard error or interval-width planning rule",
+    "claim m20 sufficient",
+    "coverage study",
+    "model adequacy or MNAR repair"
+  ],
+  "grid": [
+    5,
+    20,
+    50,
+    200,
+    565,
+    800
+  ],
+  "high": 5,
+  "low": 1,
+  "max_m": 800,
+  "missing": 2,
+  "model": "iid scores taking1 or5 conditional on a shared high-score probability theta; Beta(1,1) prior; ignore response under the declared teaching link",
+  "n": 6,
+  "no_missing": "exact finite mean; posterior variance/MCSE zero; require no tape and produce no artificial completions",
+  "observed_high": 1,
+  "observed_low": 3,
+  "predictive": "collapse theta analytically; K of two missing scores high has beta-binomial law; each independent completion draws K from its exact discrete CDF",
+  "prior_high": 1,
+  "prior_knowledge": "All Unit1-12 ordinary results and model warnings known. Hand-derived K probabilities10/21,8/21,1/7; posterior mean19/9 and variance128/567; m=565 for epsilon.02. These are disclosed checks, not blind preregistration. No hidden Tonmick answers used.",
+  "prior_low": 1,
+  "replicates": 32,
+  "schema_version": 1,
+  "tape": "extension_a_uniforms.csv",
+  "tape_order": "replicate1..32 then draw1..800; immutable SHA256-derived open-interval primitives; repeated prefixes within a replicate are nested, replicate streams distinct",
+  "target": "posterior mean of the finite six-person mean under a declared binary-score model; Monte Carlo error is relative to that posterior mean, never hidden truth"
+}

@@ -1,0 +1,58 @@
+{
+  "anchor": "observed keyed item mean separately in each original college, assigned arm and item; fail if any anchor unavailable, even if no blanks",
+  "case_id": "B8-U11-BOUNDED-MEAN-SENSITIVITY",
+  "college_count": 16,
+  "grid_half_points": [
+    -8,
+    -4,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    4,
+    8
+  ],
+  "grid_units": "delta = half_points/2; points on keyed 1..5 item scale",
+  "interpretation": "conditional-mean candidate for D under stated mean restrictions; fractional predictions are expectations, not fabricated observed categories or MI draws",
+  "items": [
+    "wb1",
+    "wb2",
+    "wb3",
+    "wb4",
+    "wb5"
+  ],
+  "missing_mean": "clip(anchor+delta_arm,1,5), for each unobserved item including wave and item nonresponse; observed values fixed",
+  "n": 1219,
+  "paths": {
+    "differential": {
+      "control_slope": 0.5,
+      "offered_slope": -0.5,
+      "t_max": 8
+    },
+    "offered_worse": {
+      "control_slope": 0,
+      "offered_slope": -1,
+      "t_max": 4
+    }
+  },
+  "prior_knowledge": "Current ordinary records, all previous units including Unit9 contrast/support and original World design descriptions known before this new freeze. Not blind preregistration. No complete/hidden/reveal records used to select grid, model or paths. Grid fixed before first Unit11 calculation.",
+  "reference_link": "unavailable item conditional mean equals observed item mean in its college/assignment/item cell; delta=0 is a mean restriction, not an established MAR mechanism",
+  "reverse_item": "wb4",
+  "scenario": {
+    "control_delta": 0.5,
+    "offered_delta": -0.5
+  },
+  "schema_version": 1,
+  "support": [
+    1,
+    5
+  ],
+  "support_check": "extreme (control+4,offered-4) and opposite reproduce Unit9 realized-D logical bounds; no causal bound or CI replaced",
+  "target_context": "B8-T02; sensitivity for realized assigned-score contrast D, distinct from finite causal effect",
+  "target_function": "original college shares Nc/1219 times offered minus control completed mean of five keyed items; no uptake conditioning",
+  "tipping": "first equality D=0 on continuous piecewise-linear adverse path t>=0; output defined flag, omit t key if absent; if D(0)<0 report already_nonpositive flag and no first_positive_to_zero tipping; equality alone is not significance or causal proof",
+  "toy_file": "model-specs/unit11_teaching.csv",
+  "uncertainty": "none added: grid is not a confidence or posterior interval; anchor estimation, finite missing outcomes and assignment uncertainty remain separate",
+  "wave": "12"
+}

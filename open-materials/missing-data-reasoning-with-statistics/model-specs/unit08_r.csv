@@ -1,0 +1,12 @@
+name,value
+case_id,B8-U08-POSTSTRATIFIED-WEIGHTING
+n,1600
+groups,00|01|10|11
+reverse_item,st4
+base_weight,1
+trim_cap,1.5
+alpha,0.05
+toy_n,8
+toy_keep,3|2
+toy_masks,24
+target,B8-T01

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Who is missing? | Missing-Data Reasoning</title><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#content">Skip to content</a><header><p class="series">NEKpress Research · Book 8</p><a class="brand" href="index.html">Missing-Data Reasoning with Statistics</a><nav aria-label="Main navigation"><a href="index.html">Start</a><a href="follow-the-book.html">Follow the book</a><a href="data-and-code.html">Data and code</a><a href="verify.html">Reproduce results</a><a href="versions.html">Versions</a></nav></header><main id="content">
+<nav aria-label="Companion"><a href="index.html">Book 8 companion</a> · Unit 1</nav>
+<p>NEKpress Research: Proof-First Guides</p><h1>Who is missing?</h1>
+<p>Audit the people and items behind a reported stress mean.</p>
+<aside><strong>Numerical companion.</strong> This numerical route is implemented for review. The book's principal exercises and solutions remain in the private reader. All study records are fictional.</aside>
+<h2>1. Name the target</h2>
+<p>Target B8-T01 is the mean full five-item baseline stress score for all 1,600 invited entrants, with equal weight per person. Reverse the fourth raw answer as 6 − st4 before scoring. A complete observed score requires all five answers. The target concerns the measured score at the declared baseline administration, rather than a latent trait.</p>
+<p>Before running anything, decide whether a mean from complete surveys alone answers that population question. Write down what would connect those observed scores to the missing scores.</p>
+<h2>2. Use the ordinary inputs</h2>
+<p>The invitation frame supplies every eligible ID and response status. The baseline survey supplies returned stress answers. The scripts join by student_id and preserve the full frame.</p>
+<ul><li><a href="../open-materials/missing-data-reasoning-with-statistics/data/anchor_participants.csv">Invitation frame (CSV)</a></li>
+<li><a href="../open-materials/missing-data-reasoning-with-statistics/data/anchor_baseline.csv">Baseline answers (CSV)</a></li>
+<li><a href="../open-materials/missing-data-reasoning-with-statistics/dictionaries/world_dictionary.csv">Variable dictionary</a></li>
+<li><a href="../open-materials/missing-data-reasoning-with-statistics/model-specs/unit01.json">Scoring, support and precision contract</a></li></ul>
+<p>No complete-roster stress file or author-only reveal enters this calculation. Numerical reference tables are read by the checker after each independent route finishes.</p>
+<h2>3. Run the audit</h2>
+<p>From the companion folder, use Python 3.10–3.12 and NumPy 1.26.4. A first-time setup is:</p>
+<pre><code>python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
+python scripts/check_unit01.py --numeric</code></pre>
+<p>This runs NumPy and standard-library Python independently. If base R is installed, add the third route:</p>
+<pre><code>python scripts/check_unit01.py --base-r</code></pre>
+<p>No add-on R packages, private checkout, World generator or document renderer are needed. Follow the <a href="../README.md">README</a> for the other numerical cases. A later identical run revalidates its existing outputs before reuse; a changed or incomplete attempt is recomputed.</p>
+<h2>4. Inspect the records</h2>
+<p>The command prints an output folder and writes its location in <code>build/unit01-audit/current.json</code>. Open that folder's <code>summary.csv</code> and <code>people.csv</code>. Keep IDs and five-bit patterns as text when importing into a spreadsheet.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Inspect</th><th scope="col">What it should preserve</th></tr></thead><tbody>
+<tr><td>people.csv</td><td>All 1,600 invitees, observed-item counts, keyed sums, blank incomplete full scores and five-bit patterns.</td></tr>
+<tr><td>S1000118</td><td>Raw st4 is 2, so keyed st4 is 4. The full keyed score is 3.2.</td></tr>
+<tr><td>A nonrespondent</td><td>Zero observed stress items, pattern 00000 and a blank complete_score.</td></tr>
+<tr><td>summary.csv</td><td>1,067 complete scores; 5,934 observed items; complete_mean about 2.934; item_lower 2.44675 and item_upper 3.47975.</td></tr>
+</tbody></table></div>
+<p>Every route must agree on the summary and every retained person record. If a route fails, retain the whole log and correct the cause before interpreting results.</p>
+<h2>5. Conclude, then question the claim</h2>
+<p>The mean 2.934 describes complete-score respondents. It is not automatically the invited-population mean. Partial records still contribute observed answers: holding those fixed and allowing every missing keyed answer to range from one to five places the target mean between 2.44675 and 3.47975.</p>
+<p>These are logical support limits, not 95% confidence limits. They add no missing-at-random assumption and identify no bias direction. A point estimate for everyone invited needs more observations or a defensible link from observed to missing scores. Numerical agreement verifies arithmetic, not that link.</p>
+<p>For a stronger next study, define a probability follow-up of original nonrespondents, retain its selection probabilities, distinguish follow-up response from selection, and document measurement-time and mode limitations. Administrative outcome linkage answers a different question from missing baseline stress.</p>
+
+<footer><p>Nicholas Elliott Karlson · All study records are fictional.</p><p><a href="../LICENSES.md">Data and documentation: CC BY 4.0; original code: MIT</a>. The book manuscript, principal exercises and full solutions have separate rights.</p><p><a href="https://github.com/nicholaskarlson/missing-data">Repository</a> · <a href="https://github.com/nicholaskarlson/missing-data/releases/tag/v0.1.0">Companion v0.1.0</a> · <a href="https://github.com/nicholaskarlson/missing-data/issues">Report an error</a> · <a href="https://github.com/nicholaskarlson/predict">Book 7 companion</a></p></footer></main></body></html>

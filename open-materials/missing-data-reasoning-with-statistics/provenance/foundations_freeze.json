@@ -1,0 +1,17 @@
+{
+  "blind_preregistration": false,
+  "created_utc": "2026-10-17T17:21:43.676108+00:00",
+  "files": {
+    "data/anchor_baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
+    "data/anchor_participants.csv": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e",
+    "model-specs/foundations.json": "ae47a9308685b2981f5e6ce8f11709696f0622785ebaa4ecd5cd1f1e96548eae",
+    "model-specs/foundations_laws.csv": "83fa917be2dc0ca0b2d29b34e12f140f1359740528cf179c33cb1268bf38c4b7",
+    "model-specs/foundations_population.csv": "e187d3a4556999a2a754440a4382bb3078425302b96a21ab1bf0a4749effe3d4",
+    "model-specs/foundations_r.csv": "b5feeca6276840758340d246e9e4d5b8de5f9a7d9d3d16787a24b05b984c0cf3"
+  },
+  "hidden_or_reveal_used": false,
+  "phase": "before_first_foundations_numeric_analysis",
+  "prior_knowledge": "accepted observed inventory and Units 1/5/9 outputs and documented World latent-dependent response rules known; hypothetical examples deliberately constructed to demonstrate mathematical distinctions",
+  "schema_version": 1,
+  "toy_truth": "new explicitly hypothetical eight-row population only, not Tonmick benchmark"
+}

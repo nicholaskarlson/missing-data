@@ -1,0 +1,13 @@
+fixture,id,wb1,wb2,wb3,wb4,wb5
+parallel,P1,1,1,1,5,1
+parallel,P2,2,2,2,4,2
+parallel,P3,4,4,4,2,4
+parallel,P4,5,5,5,1,5
+mixed,P1,1,1,1,5,1
+mixed,P2,1,1,1,4,5
+mixed,P3,5,5,1,2,5
+mixed,P4,5,5,5,1,5
+unequal_blocks,P1,1,1,5,1,5
+unequal_blocks,P2,1,1,5,1,5
+unequal_blocks,P3,1,1,5,1,5
+unequal_blocks,P4,1,1,5,1,5

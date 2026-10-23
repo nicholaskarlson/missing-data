@@ -1,0 +1,14 @@
+file,field,meaning
+people,original columns,"raw student, college, offer, responded6, form and ten raw items; blanks preserved"
+people,wb/st_observed/planned/wave/incidental,exclusive item counts within each five-item scale
+people,keyed_wb_sum,sum of observed keyed wellbeing categories
+people,full_score,always blank: at least one planned item absent for respondents; all absent for nonrespondents
+people,full_lower/full_upper,full five-item support bounds including all unavailable items
+people,H_known_total,weighted known scheduled wellbeing total; blank for wave nonrespondents
+people,H_lower/H_upper,weighted contribution support for incidental scheduled blanks; blank for wave nonrespondents
+cells,form/item,40 ordered form0..3 by ten item cells; form0 denotes wave nonresponse
+cells,roster_n/observed_n/planned_n/incidental_n/wave_n,row denominator and exclusive counts; four counts sum to roster_n
+cells,keyed_sum,observed keyed total for this item/form cell
+masks,fixture/forms,"three public fixtures,81 lexical independent assignments each; four digits preserve person order"
+masks,target/H/naive/Vhat,"known toy full mean, weighted statistic, four-item mean and unbiased teaching variance estimate"
+summary,key/value,45 named scalars; not solver inputs; design/* conditional guarantee distinct from support/* logical bounds

@@ -1,0 +1,35 @@
+{
+  "new_world_draws": 0,
+  "observed_registry_release": "1.1.0",
+  "ordinary_analyzer_hidden_inputs": false,
+  "original_version": "1.0.0",
+  "publication_status": "private_staging",
+  "sources": {
+    "anchor_baseline.csv": {
+      "extraction": "byte_copy",
+      "source_path": "data/anchor/baseline.csv",
+      "source_sha256": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850"
+    },
+    "anchor_followup.csv": {
+      "extraction": "byte_copy",
+      "source_path": "data/anchor/followup_long.csv",
+      "source_sha256": "ab385f2fd760d5f5dd0ef75f0075b91c6e82a98270d329078c9eadcb917a972f"
+    },
+    "anchor_observed_registry.csv": {
+      "extraction": "byte_copy",
+      "source_path": "derived/v1.1.0/data/anchor_observed_registry.csv",
+      "source_sha256": "28c2a43ab569f517435fbb58c0152cfdbe990012f8f91139714146483e2f6e35"
+    },
+    "anchor_participants.csv": {
+      "extraction": "byte_copy",
+      "source_path": "data/anchor/participants.csv",
+      "source_sha256": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e"
+    },
+    "anchor_registry.csv": {
+      "extraction": "byte_copy",
+      "source_path": "data/anchor/registry.csv",
+      "source_sha256": "df7761f29400ac18ea7ec6ab4f40a985e29796f12f1414e089d2781412afcd47"
+    }
+  },
+  "world_archive_commit": "b59adb629b5a5a9ff261017ddb301bc4b2e0f9a3"
+}

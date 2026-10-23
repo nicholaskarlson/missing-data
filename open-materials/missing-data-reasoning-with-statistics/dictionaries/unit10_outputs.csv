@@ -1,0 +1,13 @@
+field,meaning
+ticks,Recorded months multiplied exactly by1000; no invented precision
+group,"Original observation-policy group, not current risk-set composition"
+withdrawal_label,Canonical binary event before transfer; blank after consent censoring
+risk,Observed pre-exit risk count including tied censors
+s_before,Preceding event-free probability used for both event increments
+increment_w,Preceding event-free mass times withdrawal count/risk
+increment_t,Preceding event-free mass times transfer count/risk
+withdrawal,Cumulative incidence of withdrawal before transfer
+transfer,Cumulative incidence of competing transfer
+event_free,Mass not assigned to either event; not a person count
+withdrawal_only,"1-KM treating transfers as censors; diagnostic, no causal claim"
+toy/uniform_variance,Exact variance over eight equally probable teaching masks; not Tonmick variance

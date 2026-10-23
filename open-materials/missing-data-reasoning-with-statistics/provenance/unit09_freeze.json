@@ -1,0 +1,17 @@
+{
+  "blind_preregistration": false,
+  "files": {
+    "data/anchor_baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
+    "data/anchor_followup.csv": "ab385f2fd760d5f5dd0ef75f0075b91c6e82a98270d329078c9eadcb917a972f",
+    "data/anchor_participants.csv": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e",
+    "model-specs/unit09.json": "c4398b6653ca5799f554ed37135675c9cec9c843e61dea497c4cccb82b17a562",
+    "model-specs/unit09_r.csv": "e754c0ce040e17a1fbeefe3b815c736a48a9dcf1da492d615e027f02804c4d7d"
+  },
+  "inspected_rule_lines": "247-254 assignment;338-360 response/item masking; no outcome-generation execution",
+  "new_ordinary_raw_data": false,
+  "phase": "before_first_unit09_numeric_analysis",
+  "prior_knowledge": "existing observed inventory and draft counts; prior World assignment/response rules inspected, including latent-stress and offer-dependent follow-up; no hidden complete items or paired potential scores read or computed",
+  "reveal_used": false,
+  "schema_version": 1,
+  "world_rule_source_sha256": "d31e0fbe9e6c4dc06436a87252f6edda51e9a69d158b4b67b18b266453337c3a"
+}

@@ -1,0 +1,18 @@
+{
+  "blind_preregistration": false,
+  "files": {
+    "data/anchor_baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
+    "data/anchor_participants.csv": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e",
+    "model-specs/unit06.json": "97e97b0aa2fb39c65ebc5022f4acdec3cc920b3c8ddf7dbc3b8051939f3847c1",
+    "model-specs/unit06_conditionals.csv": "52b8385f5758b8331fcc07e43ce0c820a3cae315e38090338dbee36391167e07",
+    "model-specs/unit06_r.csv": "96ea77bf9f83614bf77dc93f69072ac38d60f279215a3d02e7ae3e740ab8da8b",
+    "random-inputs/unit06_uniforms.csv": "0011b64b4e29c5ef35f696767c0f9bf9c4736f972870302ad1cb1f6c61a2809b"
+  },
+  "phase": "before_first_unit06_model_fit_or_kernel_result",
+  "primitive_rows": 9320,
+  "prior_knowledge": "old observed inventory, all prior unit results and known World latent response rules; binary coarsening and examples chosen for teaching before newfit; no hidden truth",
+  "random_generator": "Python Random getrandbits52, open midpoint uniforms; indexed tape is authoritative across routes",
+  "random_seed": 8061701,
+  "schema_version": 1,
+  "utc": "2026-10-18T01:28:01.029296+00:00"
+}

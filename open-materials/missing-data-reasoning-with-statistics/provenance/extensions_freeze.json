@@ -1,0 +1,18 @@
+{
+  "R_contract_addendum": "CSV mirrors frozen before any scripted extension calculation; no specification or data value changed",
+  "files": {
+    "data/extension_a.csv": "5f50a9fa0d32a318f95c9a52675a7adac23a45fd8baf2fd914d0d8afc9ede36e",
+    "data/extension_b.csv": "6ebed874178fd5cdfcc5dda2f66861a24d54661aba489e96a8f3693c1a34f1f5",
+    "model-specs/extension_a.json": "008a4e04e588bb18b2122c6b429f7202295f8f0399a4659125a1e6c0f868c404",
+    "model-specs/extension_a_r.csv": "fd57518cf4921535ac4f14274a6318f388db2635566e1d5f8d84cf36a04c7da3",
+    "model-specs/extension_b.json": "ac3b7d6127ec54f6fe57402eec7e6e3dbee5ca75dc7a6087142fe812efd22f6f",
+    "model-specs/extension_b_profiles.csv": "231813364a61290028b3b80891b6cd409eb24659d4b3f6957183c066980e7338",
+    "model-specs/extension_b_r.csv": "fbea8670eb76bc8026e5b5705d5dfeff0539cf5f2592f7f8bb23bcbc68ea61d9",
+    "random-inputs/extension_a_uniforms.csv": "a89107a8f6e7aa79e6ce175437142d88dcb9941369ea631dac6b9f3ea86bf929"
+  },
+  "frozen_utc": "2026-10-22T21:11:58.743322+00:00",
+  "hidden_or_reveal_inputs_read": false,
+  "prior_knowledge_disclosed": true,
+  "stage": "before first scripted extension numerical calculation",
+  "tape_generation": "SHA256 of Book8-v0140-ExtensionA-replicate{r}-draw{j}, top52 bits, midpoint transform (integer+.5)/2^52; no runtime RNG or chosen favorable result"
+}

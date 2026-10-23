@@ -1,0 +1,52 @@
+{
+  "MCSE": "sqrt(B/m) for pooled slope; not a standard error for the scientific target or an adequacy threshold",
+  "RSS_failure_floor": "reject RSS <= 1e-24 * max(1,sum(y^2)); fail rather than treat a numerically exact line as a predictive model",
+  "analysis": "OLS slope on each completed dataset; U=RSS_complete/(n-2) * inverse(Xfull^T Xfull)[1,1] (zero-based slope coordinate)",
+  "case_id": "B8-U05-CAL-001",
+  "completion": "copy every observed y exactly; independently draw missing y from xrow*beta + sqrt(sigma2)*z_residual; no clipping, rounding or donor substitution",
+  "conditioning": "require design Gram determinant > 1e-12 times product of its diagonal entries; reject instead of regularizing",
+  "design": "columns [1,x] in that order; rows sorted P001..P032; no centering/scaling/ridge added",
+  "df": "nucom=n-2; nuold=(m-1)/lambda^2; nuobs=nucom*(nucom+1)/(nucom+3)*(1-lambda); nubr=1/(1/nuold+1/nuobs); no lambda floor; reject nubr<1",
+  "failures": [
+    "missing or duplicate IDs",
+    "missing or nonfinite x",
+    "nonfinite nonblank y",
+    "fewer than p+1 observed rows",
+    "rank-deficient or ill-conditioned observed/full design",
+    "nonpositive RSS or predictive chi-square",
+    "missing/extra/reordered/duplicate/nonfinite primitive tape entries",
+    "m<2 or nonpositive complete-data variances",
+    "nonfinite results or insufficient adjusted degrees of freedom"
+  ],
+  "fmi": "(r+2/(nubr+3))/(1+r); distinct from lambda",
+  "full_roster_truth_used": false,
+  "imputations": 20,
+  "interval": "Qbar +/- Student-t(.975,nubr)*sqrt(T); nominal model-based approximate 95% interval, no coverage demonstration",
+  "missingness_link": "ignorable missing y conditional on x, with distinct missingness/model parameters; a teaching assumption, not established by this pattern",
+  "model": "y = beta0 + beta1*x + iid Normal(0,sigma2); x fully observed, treated as fixed",
+  "n": 32,
+  "no_missing": "bypass random tape and MI; ordinary complete-data OLS and t interval at n-2 df; zero B/lambda/fmi/MCSE; do not pool identical artificial copies",
+  "output": "17 significant digits; every posterior parameter, all 20x32 completions, every Q/U and pooled quantity; exact observed-cell preservation",
+  "p": 2,
+  "pooling": "Rubin Qbar, W, B sample variance (m-1), T=W+(1+1/m)B; r=(1+1/m)B/W, lambda=(1+1/m)B/T",
+  "posterior": "RSS_obs / sum(z_variance^2), df=nobs-2; beta=OLS_obs + sqrt(sigma2)*L*z_beta where L is the lower positive-diagonal Cholesky factor of inverse(Xobs^T Xobs)",
+  "prior": "p(beta0,beta1,sigma2) proportional to 1/sigma2",
+  "schema_version": 1,
+  "scope_exclusions": [
+    "Tonmick MI",
+    "bounded score treatment",
+    "missing predictors or inclusive-strategy comparison",
+    "FCS",
+    "finite-roster inference",
+    "causal effects",
+    "coverage or method-ranking claim"
+  ],
+  "status": "regression_MI_calibration_pilot_not_completed_Unit_5",
+  "support": "unbounded continuous y; no Likert scores enter",
+  "target": "population conditional normal-regression slope beta1 for a fictional continuous calibration response; not any Tonmick score or finite-roster target",
+  "tolerance": {
+    "absolute": 1e-11,
+    "relative": 1e-11
+  },
+  "zero_between": "if B=0 and W>0: nuold serialized -1 (infinite), nubr=nuobs by limit; no lambda floor"
+}

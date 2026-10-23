@@ -1,0 +1,73 @@
+{
+  "alpha": 0.05,
+  "audit_items": [
+    "wb1",
+    "wb2",
+    "wb3",
+    "wb4",
+    "wb5",
+    "st1",
+    "st2",
+    "st3",
+    "st4",
+    "st5"
+  ],
+  "case_id": "B8-U12-PLANNED-FORMS",
+  "confidence": "Chebyshev radius sqrt(Vmax/alpha) expands [H_L,H_U], clipped to1..5; at least95% over declared independent form allocation conditional on fixed roster/reference answers, under arbitrary incidental missingness. Not a posterior interval or evidence of actual protocol.",
+  "design_status": "explicit conditional design contract; recorded forms and frequencies alone do not prove this allocation law. Prior source audit describes randomized forms, but a reader needs the actual assignment protocol to justify coverage.",
+  "diagnostic_target_id": "B8-D12",
+  "estimator": "H_i = (keyed wb1 + keyed wb2 + 1.5 times sum of the two scheduled rotated wb3/wb4/wb5) /5. Original form design weights, never observed form shares. With incidental scheduled blanks H_i is unknown and bounded, not imputed.",
+  "form_design": "independent uniform choices among forms1,2,3 across the fixed six-month respondent roster; independent of fixed reference answers; no form effect on response membership or item values",
+  "forms": {
+    "1": [
+      "wb3",
+      "st3"
+    ],
+    "2": [
+      "wb4",
+      "st4"
+    ],
+    "3": [
+      "wb5",
+      "st5"
+    ]
+  },
+  "incidental_bounds": "Every unavailable scheduled keyed item is assigned1/5 for lower/upper H_i. Planned omissions receive no response weight. Average over all956 respondents. Preserve all1219 audited rows; H fields blank for nonrespondents.",
+  "item_inclusion": {
+    "common": 1,
+    "rotated": 0.6666666666666666
+  },
+  "items": [
+    "wb1",
+    "wb2",
+    "wb3",
+    "wb4",
+    "wb5"
+  ],
+  "logical_support": "Full five-item mean support separately counts all unavailable target items, including planned omissions. Also report all-randomized six-month logical support as a different population, without design interval.",
+  "n_randomized": 1219,
+  "n_respondents": 956,
+  "precision_comparison": "conditional form-allocation variance versus a fully measured fixed census, whose variance is zero. Relative precision-loss percentage is undefined; no universal correlation or burden ranking.",
+  "prior_knowledge": "All preceding ordinary results/design descriptions, existing956 respondents and312/317/327 forms known before freeze. The pair-square bound and small-fixture hand derivations (target3, mixed variance13/400, selective mixed H2.7, unequal-block target3.4) were derived before scripted computation. Not blind preregistration. No complete/hidden/reveal Tonmick outcomes or World files used.",
+  "reporting": "Question, Target, Link, Estimation, Claim Audit; separate observation components, uncertainty types, diagnostics and model warnings; document actual versions/commands/tapes, revisions and future evidence.",
+  "reverse_items": [
+    "wb4",
+    "st4"
+  ],
+  "schema_version": 1,
+  "support": [
+    1,
+    5
+  ],
+  "target": "finite full five-item wellbeing mean at six months among actual six-month survey respondents, equal person weights; conditional design teaching target, not B8-T01/T02/T03",
+  "toy_design": "4 fixed people per fixture, exhaustive81 independent uniform form assignments, equal probabilities; a separate deterministic rule omits each largest rotated item, breaking the uniform design; ties choose smallest form",
+  "toy_file": "model-specs/unit12_teaching.csv",
+  "toy_fixtures": [
+    "parallel",
+    "mixed",
+    "unequal_blocks"
+  ],
+  "variance": "Conditional on fixed full responses, Var(Hbar)=sum_i sum_{j<k in rotated}(yij-yik)^2/(100*N^2). Each pair-square sum <=32, so Vmax=8/(25*N). No hidden values used to estimate actual design variance.",
+  "variance_estimator_teaching": "For complete teaching inputs, Vhat=3*sum_i(difference of the two scheduled rotated keyed items)^2/(100*N^2). Check expectation by all3^4 assignments; do not drop unavailable real pairs to create an ordinary variance estimate.",
+  "wave": "6"
+}

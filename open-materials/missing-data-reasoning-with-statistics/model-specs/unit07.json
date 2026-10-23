@@ -1,0 +1,101 @@
+{
+  "case_id": "B8-U07-OBSERVED-LIKELIHOOD",
+  "curvature": "inverse observed negative Hessian in (p01,p10,p11); no EM fractional-count complete-data information",
+  "em_sweeps": 100,
+  "finite_diagnostic": "B8-D06",
+  "finite_prediction": "mean conditional event probabilities at MLE; prediction point only, not posterior or finite-target interval",
+  "groups": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "high_threshold": 4,
+  "information_pivot_relative_floor": 1e-12,
+  "items": [
+    "st1",
+    "st2"
+  ],
+  "likelihood_decrease_limit": 1e-10,
+  "model_probability_target": "sum_g (N_g/1600) p_g11, fixed roster composition; not realized finite event fraction",
+  "model_target": "B8-M07",
+  "n": 1600,
+  "newton_halvings": 40,
+  "newton_sweeps": 20,
+  "observation_link": "pattern independent of full binary pair given fully observed group; distinct mechanism parameters; sufficient stronger-than-general MAR working condition",
+  "parameter_order": [
+    "p01",
+    "p10",
+    "p11"
+  ],
+  "principal_identification_guard": "all four complete-pair cells positive in every group; sufficient not necessary",
+  "prior": "none",
+  "prior_knowledge": "Existing observed and Unit6 outputs and World rules known before this freeze; no blind preregistration; no hidden scores/reveal accessed.",
+  "sampling_scope": "independent model draws conditional on groups and fixed recording patterns; no robustness/finite-roster coverage claim",
+  "scaled_score_limit": 1e-12,
+  "schema_version": 1,
+  "starts": [
+    [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    [
+      0.7,
+      0.1,
+      0.1,
+      0.1
+    ],
+    [
+      0.1,
+      0.2,
+      0.3,
+      0.4
+    ]
+  ],
+  "state_order": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "step_limit": 1e-13,
+  "toy_ridge_counts": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "toy_ridge_partial": [
+    10,
+    10,
+    10,
+    10
+  ],
+  "toy_ridge_tables": [
+    [
+      0.4,
+      0.1,
+      0.1,
+      0.4
+    ],
+    [
+      0.1,
+      0.4,
+      0.4,
+      0.1
+    ]
+  ],
+  "trace_grid": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    25,
+    50,
+    100
+  ],
+  "wald_z": 1.959963984540054
+}

@@ -1,0 +1,13 @@
+name,value
+n_randomized,1219
+n_respondents,956
+wave,6
+items,wb1|wb2|wb3|wb4|wb5
+audit_items,wb1|wb2|wb3|wb4|wb5|st1|st2|st3|st4|st5
+reverse_items,wb4|st4
+forms,"1:wb3,st3|2:wb4,st4|3:wb5,st5"
+support,1|5
+design,independent_uniform_three_forms
+alpha,.05
+toy_n,4
+fixtures,parallel|mixed|unequal_blocks

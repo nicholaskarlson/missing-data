@@ -1,0 +1,15 @@
+fixture,id,exit_month,exit_type
+eight,W1,2,withdrawal
+eight,W2,2,transfer
+eight,W3,4,withdrawal
+eight,W4,12,none
+eight,W5,6,transfer
+eight,W6,8,withdrawal
+eight,W7,12,none
+eight,W8,12,none
+tied,A,2,withdrawal
+tied,B,2,transfer
+tied,C,2,consent_withdrawn
+tied,D,12,none
+tied,E,6,withdrawal
+tied,F,12,none

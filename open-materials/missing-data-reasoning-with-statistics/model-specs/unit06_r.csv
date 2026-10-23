@@ -1,0 +1,11 @@
+name,value
+case_id,B8-U06-JOINT-BINARY-001
+n,1600
+prior_per_cell,1
+imputations,20
+high_threshold,4
+groups,00|01|10|11
+state_order,00|01|10|11
+boundary_margin,1e-10
+mixing_warning,1e-8
+sweep_grid,1|2|5|10|25|50

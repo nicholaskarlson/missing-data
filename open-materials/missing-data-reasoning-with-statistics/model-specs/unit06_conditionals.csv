@@ -1,0 +1,4 @@
+case,a_given_b0,a_given_b1,b_given_a0,b_given_a1
+compatible,.2,.8,.2,.8
+incompatible,.2,.8,.4,.6
+independent,.3,.3,.7,.7

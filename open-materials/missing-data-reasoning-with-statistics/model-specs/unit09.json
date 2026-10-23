@@ -1,0 +1,72 @@
+{
+  "all_known": "D support width zero, causal logical width and randomization radius generally nonzero; no claim both potential scores become observed",
+  "all_missing": "support D bounds [-4,4], finite causal support [-4,4], confidence [-4,4]; complete-case means/differences undefined and omitted, never filled zero",
+  "alpha": 0.05,
+  "analysis_wave": "12",
+  "assignment": "conditional on observed arm counts, independent uniform fixed-count assignment within each college; counts must be floor/ceiling half as generator specifies; odd-college coin is conditioned on",
+  "case_id": "B8-U09-ATTRITION-001",
+  "causal_assumptions": [
+    "two well-defined full measured reference scores for every randomized person regardless of subsequent enrollment or response",
+    "consistency and no interference between people",
+    "original college-block offer assignment faithfully recorded; no postassignment selection of randomized roster",
+    "fixed potential scores under the stated reference measurement regime; outcome support 1..5"
+  ],
+  "causal_logical_bounds": "For each assigned1 person, potential difference in [person_L-5,person_U-1]; assigned0 in [1-person_U,5-person_L]. Average across all N. These bound the finite potential-score effect itself with no probabilistic use of randomization. Endpoints attainable on the score grid; not confidence limits.",
+  "college_count": 16,
+  "complete_case": "pooled and college-standardized complete-score arm differences describe selected observed groups, not identified causal effects; omit a mean/difference if any necessary subset has no full score, with explicit defined flag",
+  "confidence": "r=sqrt(Vmax/alpha). By unbiasedness, Neyman variance formula and Chebyshev, [D-r,D+r] covers fixed finite causal effect with probability >=1-alpha over original randomization conditional on counts. Observed support bounds contain D for every valid missingness pattern, so report [max(-4,D_lower-r),min(4,D_upper+r)]. This procedure is conservative, finite-sample and does not assume a response model. It is a randomization confidence statement, not a posterior probability or a conditional-on-this-realized-assignment coverage statement. No simulated coverage claim.",
+  "display": "counts integer; score means and limits 6 decimals; fractions percent one decimal; CSV values 17 digits",
+  "example_selection": "first sorted randomized ID with 12-month survey returned, exactly one blank wellbeing item, and an observed wb4 different from 3; not chosen by arm contrast or result",
+  "exclusions": [
+    "hidden complete items or paired item potential-score benchmarks",
+    "latent trajectory effects as measured score truth",
+    "effect of uptake rather than offer",
+    "MAR-weighted or imputed adjustment",
+    "selected-subgroup standard-error CI",
+    "permutation test of a sharp null",
+    "public release or reveal"
+  ],
+  "failures": [
+    "duplicate/extra/missing IDs or wave keys",
+    "nonrespondent incorrectly included in randomized file",
+    "invalid offer/binary flags or college joins",
+    "assignment counts not balanced within a college",
+    "raw item outside blank or exact 1..5",
+    "wave nonresponse with recorded item values",
+    "invalid alpha, empty group, singleton college, nonfinite arithmetic"
+  ],
+  "inputs": [
+    "anchor_participants.csv",
+    "anchor_baseline.csv",
+    "anchor_followup.csv"
+  ],
+  "items": [
+    "wb1",
+    "wb2",
+    "wb3",
+    "wb4",
+    "wb5"
+  ],
+  "missingness_assumption": "none for support bounds or the expanded randomization confidence procedure; no MAR or equal-response-rate inference",
+  "n": 1219,
+  "patterns": "three wave-response bits in 3,6,12 order; intermittent return means a 1 after an earlier 0; includes 001,010,011,101; monotone patterns 000,100,110,111",
+  "random_draws": "none; deterministic observed-data/support/design calculation",
+  "realized_contrast": "D=sum_c (N_c/N)*(mean_full_assigned1_c-mean_full_assigned0_c). This is a randomization estimator, not exact causal truth for one assignment. Bound each arm with all retained item information. lower=sum w*(L_c1-U_c0); upper=sum w*(U_c1-L_c0).",
+  "reference_source": "Liu and Yang (2020), Biometrika 107(4),935-948; arXiv:1908.01628v2, Section 2 Proposition 1 for exact full-data mean/variance. Range bound plus Chebyshev expansion derived here; no normal approximation or estimated complete-case variance used.",
+  "reverse_item": "wb4",
+  "schema_version": 1,
+  "score": "complete score only when all five raw items are known, reverse wb4; otherwise blank; record sum of every observed keyed cell and [sum+missing,sum+5*missing]/5 person limits",
+  "support": [
+    1,
+    5
+  ],
+  "target": "finite randomized-roster average of 12-month offer versus no-offer potential five-item wellbeing scores; equal-person, equivalently college N_c/N weighting",
+  "target_id": "B8-T02",
+  "unit": 9,
+  "variance_derivation": "With full outcomes, Var(D | counts)=sum_c w_c^2*(S_c1^2/n_c1 + S_c0^2/n_c0 - S_ctau^2/N_c), finite variances use denominator N_c-1. Score range four gives S_cz^2<=4*N_c/(N_c-1). Drop nonnegative effect-variance term; Vmax=4*sum_c w_c^2*N_c/(N_c-1)*(1/n_c1+1/n_c0).",
+  "waves": [
+    "3",
+    "6",
+    "12"
+  ]
+}

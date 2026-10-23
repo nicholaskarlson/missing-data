@@ -1,0 +1,13 @@
+name,value
+case_id,B8-U07-OBSERVED-LIKELIHOOD
+n,1600
+em_sweeps,100
+prior,none
+groups,00|01|10|11
+high_threshold,4
+scaled_score_limit,1e-12
+step_limit,1e-13
+likelihood_decrease_limit,1e-10
+information_floor,1e-12
+newton_sweeps,20
+wald_z,1.959963984540054

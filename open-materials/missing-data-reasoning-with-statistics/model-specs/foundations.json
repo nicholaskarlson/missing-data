@@ -1,0 +1,60 @@
+{
+  "case_id": "B8-U02-04-FOUNDATIONS-001",
+  "display": "17 significant digits CSV; dynamic reader anchors; probabilities declared, not fitted",
+  "exclusions": [
+    "hidden values or paired truth",
+    "Tonmick mechanism classification from response rates",
+    "coverage or superiority claims",
+    "adopting single fill as an adequate inferential procedure",
+    "changing any previous target, source data, random tape or reference answer"
+  ],
+  "failures": [
+    "ID duplicates or roster mismatch",
+    "changed college or frame group join",
+    "invalid response or binary group flags",
+    "out-of-support raw answer",
+    "empty item or complete-score group",
+    "malformed teaching roster, X support, law probabilities or fixed contract"
+  ],
+  "fill_experiment": "all 36 equal-probability subsets retaining two per X group. Replace four missing Y by retained grand mean. Filled mean equals retained mean, but naive iid variance shrinks by 3/14. Enumerate actual mask variance for finite-roster mean; do not confuse it with iid or conditional missing-value uncertainty.",
+  "group_order": [
+    "part_time",
+    "first_gen"
+  ],
+  "group_standardization": "candidate plug-in under a superpopulation conditional-mean transport model E(Y|group,C=1)=E(Y|group), with positive completion probability in each group; it is not an exact finite-roster equality or identification of its realized missing answers; finite prediction/model uncertainty remains uncomputed",
+  "groups": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "items": [
+    "st1",
+    "st2",
+    "st3",
+    "st4",
+    "st5"
+  ],
+  "mcar_experiment": "all 70 uniform subsets retaining four of eight; report mean distribution only",
+  "n": 1600,
+  "nonidentification": "two binary Y in {1,5}, R joint probability laws, constant X. Same observed law P(R=1,Y=1)=P(R=1,Y=5)=.25 and P(R=0)=.5. A is MCAR, B is MNAR. Full means differ. These are distributions, not two realized rosters or Tonmick truth.",
+  "ordinary_inputs": [
+    "anchor_participants.csv",
+    "anchor_baseline.csv"
+  ],
+  "ordinary_scope": "response and complete-score descriptions by observed frame groups; candidate group-standardized complete mean and itemwise grand-mean fill are working calculations, not identified full-roster answers",
+  "pseudo_iid_variance": "sample variance of filled person scores divided by 1600; deliberately invalid for fixed finite-roster missing-answer uncertainty; no CI or coverage claim",
+  "random_inputs": "none; exhaustive enumerations, no seed",
+  "reverse_item": "st4",
+  "schema_version": 1,
+  "single_fill": "retain every known raw cell; reverse st4 before computing item-specific keyed observed mean; replace only absent keyed cells by that mean; average five per person and 1600 people; fractional expected-value fills are not realized Likert answers",
+  "target": "equal-person full measured baseline stress score mean over 1600 invitees, all five items with st4 reversed",
+  "target_id": "B8-T01",
+  "teaching_population": "eight explicitly hypothetical fixed people; X fully observed, Y in 1..5; no connection to hidden Tonmick scores",
+  "units": [
+    2,
+    3,
+    4
+  ],
+  "x_experiment": "all 16 equal-probability subsets retaining three X=0 and one X=1; selection depends only on fully observed X. Compare retained mean, population-share standardized mean, saturated binary-X slope"
+}

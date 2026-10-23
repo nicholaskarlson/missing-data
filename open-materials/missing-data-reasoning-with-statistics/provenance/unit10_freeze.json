@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-21T08:01:38.462065+00:00",
+  "files": {
+    "data/anchor_baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
+    "data/anchor_observed_registry.csv": "28c2a43ab569f517435fbb58c0152cfdbe990012f8f91139714146483e2f6e35",
+    "data/anchor_participants.csv": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e",
+    "data/anchor_registry.csv": "df7761f29400ac18ea7ec6ab4f40a985e29796f12f1414e089d2781412afcd47",
+    "model-specs/unit10.json": "120517525b3de4aaa512beed8e37d9590a455b0bc3c507ef147e43e0263db333",
+    "model-specs/unit10_histories.csv": "05d1231661f2453137fa8c8915a2b0e8e92c72a33c12c70e67130834d8b21511",
+    "model-specs/unit10_r.csv": "184f0e049e89030d1ee85e9f0733d42ca4cba1554f76d42a8f1682ddc7de70df",
+    "provenance/registry_observation_policy.md": "20ba14604463a9b6a15c46060b62fda6e4bfbb44d4a7e55cc88356e7431a29f3"
+  },
+  "hidden_or_reveal_used": false,
+  "prior_knowledge": "Supplied handoff numerical anchors, observed counts, policy and previous units known before this rebuilt freeze; not blind preregistration. Earlier Unit10 files not recovered; no retrospective pooled-spec amendment invented.",
+  "recovered_prior_unit10_files": false,
+  "schema_version": 1,
+  "stage": "before first new Unit10 calculation in rebuilt work"
+}

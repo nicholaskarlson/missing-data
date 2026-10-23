@@ -1,0 +1,20 @@
+{
+  "blind_preregistration": false,
+  "files": {
+    "data/anchor_baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
+    "data/anchor_participants.csv": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e",
+    "model-specs/unit05.json": "6b978a310fdcd1697e2981d4cae45913b393603752b039b17ba590a382f22782",
+    "model-specs/unit05_r.csv": "31f35a652d635a776764b4c56810605afc8870901a7a4ab0ca599f368319fac4",
+    "random-inputs/unit05_uniforms.csv": "00c21107d1b75081c529c1aa2eaa529c47558d098736995f68771c69033b15fa"
+  },
+  "missing_cell_count_used_only_for_primitive_inventory": 2066,
+  "phase": "before_first_bounded_MI_fit",
+  "prior_knowledge": "Unit 1 observed response/scoring/support counts and v0.4.0 calibration results known; World response rules include latent stress, so the working MAR model is not claimed to describe the simulator. No full-roster score aggregate has been read or computed.",
+  "random_primitive_generation": {
+    "mapping": "SHA256(namespace|imputation|role|key), first 64-bit big-endian word shifted 12, midpoint of resulting 52-bit bin divided by 2^52; open (0,1)",
+    "namespace": "NEKpress.Book8.Unit05.bounded.20261016.v050",
+    "routes": "read primitive uniform table only; independently compute posterior gamma values and categorical completions"
+  },
+  "reveal_used": false,
+  "schema_version": 1
+}

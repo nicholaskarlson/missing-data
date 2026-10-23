@@ -1,0 +1,11 @@
+name,value
+case_id,B8-U02-04-FOUNDATIONS-001
+n,1600
+groups,00|01|10|11
+reverse_item,st4
+ordinary_target,finite_roster_mean
+toy_n,8
+mcar_keep,4
+x_keep_0,3
+x_keep_1,1
+fill_keep_per_group,2

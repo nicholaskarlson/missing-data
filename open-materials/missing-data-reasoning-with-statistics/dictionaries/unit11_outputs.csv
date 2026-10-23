@@ -1,0 +1,14 @@
+field,meaning
+delta0/delta1,Requested point shift to missing keyed-item means in control/offered arm; clip shifted means to1..5
+control_half_points/offered_half_points,Grid requested delta multiplied by2; not full-score or log-odds change
+anchor,Observed keyed-item mean in original college/assigned arm/item
+wave_missing/item_missing,Distinct unavailable cells in nonreturned versus returned questionnaires
+weight,Original college randomized count/1219
+reference_score/scenario_score,"Predicted person five-item mean, not an observed full score or stochastic draw"
+D,"Standardized predicted realized assigned-score contrast, distinct from finite causal effect"
+lower_boundary_cells/upper_boundary_cells,Number of missing item cells whose shifted mean is at1/5
+tip/*/defined,1 if first D=0 exists on declared adverse path;0 if no value is reported
+tip/*/already_nonpositive,Reference contrast is nonpositive; no positive reference sign to erase
+tip/*/t,First continuous adverse-path zero; key absent when undefined
+tip/*/residual,"D at reported zero, arithmetic check only"
+common/grid_min_D,"Minimum on common-shift grid diagonal, not optimized continuous range or confidence limit"

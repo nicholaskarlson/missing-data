@@ -1,0 +1,39 @@
+{
+  "absolute_tolerance": 1e-11,
+  "analysis": "sample mean; sample variance / N",
+  "case": "mi_microfixture",
+  "chains": 1,
+  "clipping": "none; unbounded normal fixture",
+  "common_random_numbers": "one frozen tape, no model comparisons",
+  "failure": "invalid schema/keys, nonfinite values, nonpositive RSS or chi-square -> stop",
+  "imputations": 8,
+  "iterations": 1,
+  "missing_row_ids": [
+    "F07",
+    "F08"
+  ],
+  "missing_y": "mu + sqrt(sigma2)*z_residual_row",
+  "model": "iid_normal_intercept_only",
+  "mu": "observed_mean + sqrt(sigma2/6)*z_mu",
+  "observed_n": 6,
+  "order": "imputation, variance positions 1..5, mu, missing rows in key order",
+  "pooling": "Rubin large-sample W+B*(1+1/m); old df; no interval",
+  "prior": "p(mu,sigma2) proportional to 1/sigma2",
+  "relative_tolerance": 1e-11,
+  "row_ids": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08"
+  ],
+  "schema_version": 1,
+  "seed": 20261015,
+  "sigma2": "RSS / sum(z_variance_j^2), j=1..5",
+  "total_n": 8,
+  "variable": "y",
+  "variance_df": 5
+}

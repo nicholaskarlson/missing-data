@@ -1,0 +1,24 @@
+{
+  "created_before_first_fit": true,
+  "data_sha256": "d47db76e1691e679d7c57467831d1fd42ff1c4d1e9af18ea64b1846c89c2e60e",
+  "distributions": "chi-square(5) constructed independently by summing five primitive normal squares",
+  "index_fields": [
+    "imputation",
+    "chain",
+    "iteration",
+    "variable",
+    "update",
+    "row_key",
+    "position",
+    "variate_type"
+  ],
+  "no_language_rng_matching": true,
+  "not_world_draws": true,
+  "preparation": "Python random.Random(20261015) uniforms; Box-Muller cosine, fresh pair per stored normal; no rejection or selection",
+  "reuse": "analyzers consume serialized standard normals without RNG",
+  "schema_version": 1,
+  "scope": "engineering feasibility, not a completed Tonmick unit",
+  "serialization": "CSV 17 significant digits; signed IEEE double parse",
+  "spec_sha256": "5b7c0df346bdd785d2ad3b79d9e685b66df060ab710003c8a74b1e28ab8bbdac",
+  "tape_sha256": "19b9d0a982c3f2ce6f9af2a436f73a1395a557ebe7b5108708f5adaaea1dad14"
+}

@@ -1,0 +1,165 @@
+{
+  "diagnostic_targets": [
+    "B8-D06"
+  ],
+  "edition": "Book 8 reader review; final KDP edition pending",
+  "extensions": [
+    {
+      "case": "extension_a",
+      "id": "A",
+      "page": "extension_a.html",
+      "status": "implemented"
+    },
+    {
+      "case": "extension_b",
+      "id": "B",
+      "page": "extension_b.html",
+      "status": "implemented"
+    }
+  ],
+  "implemented_numerical_cases": [
+    "inventory",
+    "mi",
+    "withdrawal",
+    "unit01",
+    "regmi",
+    "unit05",
+    "unit09",
+    "foundations",
+    "unit06",
+    "unit07",
+    "unit08",
+    "unit10",
+    "unit11",
+    "unit12",
+    "extension_a",
+    "extension_b"
+  ],
+  "implemented_units": 12,
+  "method_pilots": [
+    {
+      "case_id": "B8-U05-CAL-001",
+      "command": "python scripts/check_regmi.py --base-r --outdir build/regmi-pilot",
+      "page": "regmi.html",
+      "status": "calibration_only",
+      "unit": 5
+    }
+  ],
+  "model_targets": [
+    {
+      "id": "B8-M07",
+      "scope": "fixed invitation-composition weighted joint model probability; distinct from realized B8-D06 fraction",
+      "unit": 7
+    }
+  ],
+  "numerical_case_count": 16,
+  "release": "v0.1.0",
+  "repository": "https://github.com/nicholaskarlson/missing-data",
+  "reveal": "not included; a separate first-edition decision remains",
+  "site": "https://nicholaskarlson.github.io/missing-data/",
+  "status": "implemented; public export authorized",
+  "targets": [
+    "B8-T01",
+    "B8-T02",
+    "B8-T03"
+  ],
+  "units": [
+    {
+      "command": "python scripts/check_unit01.py --base-r",
+      "number": 1,
+      "page": "unit01.html",
+      "status": "implemented",
+      "title": "Who Is Missing?"
+    },
+    {
+      "command": "python scripts/check_foundations.py --base-r --outdir build/foundations-audit",
+      "number": 2,
+      "page": "unit02.html",
+      "status": "implemented",
+      "title": "Why Are Values Missing?"
+    },
+    {
+      "command": "python scripts/check_foundations.py --base-r --outdir build/foundations-audit",
+      "number": 3,
+      "page": "unit03.html",
+      "status": "implemented",
+      "title": "When Complete Cases Are Enough"
+    },
+    {
+      "command": "python scripts/check_foundations.py --base-r --outdir build/foundations-audit",
+      "number": 4,
+      "page": "unit04.html",
+      "status": "implemented",
+      "title": "Single Imputation and False Certainty"
+    },
+    {
+      "command": "python scripts/check_unit05.py --base-r --outdir build/unit05-audit",
+      "model_audit": "conditional_independence_warning",
+      "number": 5,
+      "page": "unit05.html",
+      "status": "implemented",
+      "title": "Multiple Imputation"
+    },
+    {
+      "command": "python scripts/check_unit06.py --base-r --outdir build/unit06-audit",
+      "number": 6,
+      "page": "unit06.html",
+      "scope": "coarsened two-item diagnostic, not full-score model replacement",
+      "status": "implemented",
+      "target": "B8-D06",
+      "title": "Chained Equations and Model Compatibility"
+    },
+    {
+      "command": "python scripts/check_unit07.py --base-r --outdir build/unit07-review",
+      "inference": "observed_likelihood_model_probability_not_finite_target_interval",
+      "number": 7,
+      "page": "unit07.html",
+      "status": "implemented",
+      "target": "B8-M07",
+      "title": "Likelihood Under Missing at Random"
+    },
+    {
+      "command": "python scripts/check_unit08.py --base-r --outdir build/unit08-review",
+      "inference": "conditional_uniform_complete_score_subsets_not_validated_response",
+      "number": 8,
+      "page": "unit08.html",
+      "status": "implemented",
+      "target": "B8-T01",
+      "title": "Weighting for Nonresponse"
+    },
+    {
+      "command": "python scripts/check_unit09.py --base-r --outdir build/unit09-audit",
+      "inference": "support_and_conservative_randomization",
+      "number": 9,
+      "page": "unit09.html",
+      "status": "implemented",
+      "title": "Attrition in a Randomized Study"
+    },
+    {
+      "command": "python scripts/check_unit10.py --base-r --outdir build/unit10-review",
+      "number": 10,
+      "page": "unit10.html",
+      "status": "implemented",
+      "target": "B8-T03",
+      "title": "Censored Event Times"
+    },
+    {
+      "command": "python scripts/check_unit11.py --base-r --outdir build/unit11-review",
+      "inference": "mean_sensitivity_without_interval",
+      "number": 11,
+      "page": "unit11.html",
+      "status": "implemented",
+      "target": "B8-T02 context; realized D sensitivity",
+      "title": "Sensitivity Analysis for MNAR"
+    },
+    {
+      "command": "python scripts/check_unit12.py --base-r --outdir build/unit12-review",
+      "inference": "conditional_form_design_conservative_interval",
+      "number": 12,
+      "page": "unit12.html",
+      "status": "implemented",
+      "target": "B8-D12",
+      "title": "Planned Missingness and Reporting"
+    }
+  ]
+}

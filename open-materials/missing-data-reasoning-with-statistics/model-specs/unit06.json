@@ -1,0 +1,90 @@
+{
+  "allocation_definition": "a=#(A0,B0) among only-A0 records; b=#(A1,B0) among only-A1; c=#(A0,B0) among only-B0; d=#(A0,B1) among only-B1. Lexicographic a,b,c,d ascending.",
+  "allocation_order": [
+    "row0",
+    "row1",
+    "col0",
+    "col1"
+  ],
+  "boundary_margin": 1e-10,
+  "bounds": "unknown both-high event only where neither observed binary is0. Lower observed11/1600; upper possible-high-count/1600. Sharp binary-event support, not full-score support or CI.",
+  "case_id": "B8-U06-JOINT-BINARY-001",
+  "conditional_chain": "for each posterior theta draw derive A|B and B|A. Build exact 4x4 full-sweep row-stochastic matrices for AB and BA. Enumerate powers at1,2,5,10,25,50 sweeps from all four starts; compare total variation to theta; no random chain used as an exact posterior reference.",
+  "display": "17 significant digits CSV, integer binary fields exact; no nonfinite or invented undefined number",
+  "draw_order": "per completion group ascending: allocation uniform then four Gammaquantile uniforms; then partial records by group and row0,row1,col0,col1, each sortedID, sequential uniform subset with fixed allocated success count; then bothmissing sortedID single joint categorical uniform.",
+  "example_selection": "first sortedID with exactly one of st1/st2 missing and the other raw answer4or5, chosen before fit; fullscore and ordinal missing values are not reconstructed",
+  "exclusions": [
+    "hidden Tonmick values or reveal",
+    "replacement full five-item joint MI model",
+    "ordinal raw answers inferred from binary categories",
+    "regression-substantive-model compatibility theorem",
+    "MCMC ESS/Rhat claims",
+    "frequency coverage or model validation"
+  ],
+  "failures": [
+    "duplicate/missing/extra IDs",
+    "college/response/group mismatch",
+    "raw support not blank or exact1..5",
+    "malformed or reordered primitive tape",
+    "uniform outside open0,1",
+    "ambiguous category boundary",
+    "nonpositive simplex or undefined conditional",
+    "negative or nonfinite variance",
+    "invalid toy conditional probabilities"
+  ],
+  "finite_moments": "H=observed11+(mrow1-b)+(mcol1-d), M=bothmissing. Given allocation, K for bothmissing is beta-binomial(M,alpha11,A-alpha11). E(total)=H+M*mu, Var(total)=M*mu*(1-mu)*(A+M)/(A+1). Total variance adds mixture variance of conditional means. Independent group totals sum, divide by1600 or1600squared.",
+  "fixed_parameter_scope": "derived full conditionals at fixed theta; not a generic theorem equating independently refitted FCS with joint-model posterior sampling",
+  "gamma": "unit-scale Gamma(alpha integer>=1) inverseCDF; independent scalar series/continued fraction, NumPy quadrature, Rqgamma; absolute or relative1e-11 comparison, no new dependency",
+  "group_order": [
+    "part_time",
+    "first_gen"
+  ],
+  "groups": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "high_categories": [
+    4,
+    5
+  ],
+  "imputations": 20,
+  "initializations": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "items": [
+    "st1",
+    "st2"
+  ],
+  "joint_model": "independent people conditional on group-specific p00,p01,p10,p11; independent Dirichlet(1,1,1,1) priors across groups. Both missing contribute likelihood1; partial records contribute observed marginal cell probabilities.",
+  "mixing_warning": "maxTV at50 across all80 posterior group draws and bothscanorders; warning retained even if arithmetic passes, never extend grid after results",
+  "mixing_warning_threshold": 1e-08,
+  "n": 1600,
+  "observation_model": "joint response and two-item pattern ignorability conditional on fully observed group; parameters distinct from group-specific joint probabilities. Strong unverified working assumption; World latent-dependent response knowledge acknowledged.",
+  "posterior": "enumerate binomial expansions of four observed marginal factors. For each allocation multiply its combinatorial coefficient by B(alpha_alloc)/B(prior+complete_counts); log-sum-exp normalize. Alpha includes every observed partial record through allocation, not both-missing records.",
+  "posterior_bound": "Chebyshev conditional at-least95% using exact finite posterior mean/variance, intersect binary-event support. Conservative posterior content under working model, not central credible interval or demonstrated frequentist coverage.",
+  "prior_per_cell": 1,
+  "schema_version": 1,
+  "states": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "sweep_grid": [
+    1,
+    2,
+    5,
+    10,
+    25,
+    50
+  ],
+  "target": "finite1600-person proportion whose two raw baseline stress answers st1 and st2 would both be4or5 at the declared baseline reference administration",
+  "target_id": "B8-D06",
+  "target_role": "explicitly coarsened diagnostic, not B8-T01 five-item stress mean or causal effect; no original target edited",
+  "toy": "explicit positive binary conditional probabilities in unit06_conditionals.csv; compute conditional odds-ratio agreement, transition matrices, each order stationary law via independent linear solvers and invariant residuals. An incompatible positive kernel can converge; convergence alone does not imply compatibility."
+}

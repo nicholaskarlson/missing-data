@@ -1,0 +1,10 @@
+name,value
+case_id,B8-U09-ATTRITION-001
+n,1219
+college_count,16
+alpha,.05
+target,finite_randomized_roster_offer_effect
+analysis_wave,12
+reverse_item,wb4
+assignment,conditional_balanced_complete_randomization
+variance,range_Neyman_Chebyshev

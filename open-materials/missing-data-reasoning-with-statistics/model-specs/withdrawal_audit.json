@@ -1,0 +1,12 @@
+{
+  "case": "observed withdrawal denominator audit",
+  "groups": [
+    "all",
+    "control",
+    "offered",
+    "nonrespondents"
+  ],
+  "outcome": "withdrawal_label when outcome_known=1; unknown stays blank",
+  "bounds": "events/n and (events+unknown)/n, finite-support logical bounds not confidence intervals",
+  "standardization": "(1219/1600)*(control_events/control_known)+(381/1600)*(nonrespondent_events/nonrespondent_known); diagnostic arithmetic, not raw all-invitee risk"
+}

@@ -1,0 +1,9 @@
+name,value
+case_id,B8-U10-CENSORED-EVENTS
+n,1600
+target,B8-T03
+horizon_ticks,12000
+ticks_per_month,1000
+groups,control|offered|nonrespondents
+grid_ticks,0|3000|6000|9000|12000
+ties,events_before_tied_censors

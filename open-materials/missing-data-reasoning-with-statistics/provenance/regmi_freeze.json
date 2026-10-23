@@ -1,0 +1,19 @@
+{
+  "blind_preregistration": false,
+  "files": {
+    "data/regmi_calibration.csv": "a4c11995ff293c6a2bca638727d838c74fae9c79d9ba9d4a1cf95a7c360b9232",
+    "model-specs/regmi.json": "b102757e7b1481f1131374c5cdd6b26b9370b9e0f07f395b386fe87b23aff1b5",
+    "model-specs/regmi_r.csv": "5c57e8aa0450b8ed692f3363c469827640521bd00387d7e017acca7b919223a8",
+    "random-inputs/regmi_normals.csv": "f24b6c36fe5620ffb34e1776ff9bf021ab39becd9a30e607ebea58855319d8a3"
+  },
+  "phase": "contract_and_inputs_before_first_regression_fit",
+  "primitive_generation": {
+    "mapping": "SHA256(namespace|imputation|role|index), first and second 64-bit big-endian words shifted 11 bits; midpoint uniforms divided by 2^53; cosine Box-Muller",
+    "namespace": "NEKpress.Book8.regression-MI-calibration.v1.20261016",
+    "ordinary_routes": "read frozen standard-normal primitives only; never regenerate them or read fitted answers"
+  },
+  "prior_knowledge": "Existing observed Tonmick counts and prior microfixture results are known. No regression-pilot fit or imputation has yet been computed at this freeze.",
+  "schema_version": 1,
+  "scope": "calibration only; no Tonmick estimate or hidden benchmark",
+  "truth_benchmark_used": false
+}

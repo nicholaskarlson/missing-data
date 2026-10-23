@@ -1,0 +1,11 @@
+name,value
+model_id,B8-U05-DIR-001
+n,1600
+imputations,20
+prior_per_category,1
+groups,00|01|10|11
+reverse_item,st4
+target,finite_roster_mean
+boundary_margin,1e-10
+dependence_flag,.10
+worked_example_id,S1000218

@@ -1,0 +1,61 @@
+{
+  "ESS": "(sum weights)^2/sum squared weights; descriptive weight dispersion only, invariant to global scaling; not bias or full-design variance",
+  "alpha": 0.05,
+  "analysis_indicator": "C=all five raw baseline stress items observed; not merely survey returned",
+  "analysis_weight": "N_g/n_g for complete-score records only",
+  "base_weight": 1,
+  "calibration": "sum complete analysis weights=N_g within each recorded frame group",
+  "case_id": "B8-U08-POSTSTRATIFIED-WEIGHTING",
+  "completion_factor": "R_g/n_g",
+  "confidence": "center poststratified estimate, radius sqrt(Vmax/alpha), clip to1..5. At least95% under the declared conditional uniform-mask design; no posterior or validated Tonmick coverage. Logical item bounds reported separately; no estimated-variance normal interval.",
+  "group_variables": [
+    "part_time",
+    "first_gen"
+  ],
+  "groups": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "guards": "N_g>0, n_g>0 and n_g>=2 unless group is census; nonpositive/undefined response rates, raw support, joins and malformed toy/spec fail closed",
+  "items": [
+    "st1",
+    "st2",
+    "st3",
+    "st4",
+    "st5"
+  ],
+  "n": 1600,
+  "no_random_tape": "exhaustive24 masks, deterministic primitives only",
+  "normalization": "multiply analysis weights by n_complete/N for mean1 among analyzed people; ratio mean invariant",
+  "prior_knowledge": "Prior observed/World rules and all earlier book cases known before freeze; not blind preregistration. No hidden Tonmick score or reveal used.",
+  "raw_support": [
+    1,
+    5
+  ],
+  "recalibration": "within-group calibration after equal-weight cap restores N_g/n_g and can undo cap",
+  "response_design": "conditional on positive n_g, complete-score sets are independent uniform subsets of size n_g within each fixed invitation group; all full reference scores fixed. Working observation assumption, not an actual randomized response design. Implies conditional unbiasedness; stronger than mean transport alone.",
+  "return_factor": "N_g/R_g",
+  "reverse_item": "st4",
+  "schema_version": 1,
+  "score": "mean of five keyed items; st4=6-raw; incomplete scores remain blank",
+  "target_id": "B8-T01",
+  "toy_file": "model-specs/unit08_population.csv",
+  "toy_group_counts": [
+    4,
+    4
+  ],
+  "toy_keep": [
+    3,
+    2
+  ],
+  "toy_mask_count": 24,
+  "toy_n": 8,
+  "toy_order": "lexicographic sorted retained-ID combinations,3 of first4 and2 of last4",
+  "toy_selection_failure": "deterministically retain lowest3 Y in group0 and lowest2 Y in group1, ID tie-break; no coverage claim for this outcome-dependent mechanism",
+  "trim_cap": 1.5,
+  "trimming": "clip unnormalized complete-score weights at1.5; report lost calibration and implied composition; do not recommend cap or borrow untrimmed variance",
+  "variance_bound": "sum_g (N_g/N)^2 (1-n_g/N_g) 4*N_g/((N_g-1)*n_g), zero for a fully observed group; scores bounded1..5",
+  "variance_estimator": "sum_g (N_g/N)^2 (1-n_g/N_g) s_g^2/n_g, where s_g^2 is complete-score sample variance using n_g-1; zero for a fully observed group"
+}

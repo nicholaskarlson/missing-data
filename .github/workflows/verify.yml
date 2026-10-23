@@ -1,0 +1,39 @@
+name: Verify missing-data companion
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: missing-data-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  companion-status:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python scripts/verify_companion.py --boundary-only
+      - run: python scripts/build_site.py --outdir build/site-check
+      - id: scope
+        run: python scripts/classify_changes.py
+      - if: steps.scope.outputs.numerical == 'true'
+        run: python -m pip install -r requirements.txt
+      - if: steps.scope.outputs.numerical == 'true'
+        run: command -v Rscript || (sudo apt-get update && sudo apt-get install -y r-base-core)
+      - if: steps.scope.outputs.numerical == 'true'
+        run: python scripts/verify_companion.py --base-r --outdir build/ci-three-route
+      - name: Record verification scope
+        env:
+          NUMERICAL_REQUIRED: ${{ steps.scope.outputs.numerical }}
+        run: |
+          test "$NUMERICAL_REQUIRED" = true || test "$NUMERICAL_REQUIRED" = false
+          echo "MISSING_CI_SCOPE_OK numerical_required=$NUMERICAL_REQUIRED"

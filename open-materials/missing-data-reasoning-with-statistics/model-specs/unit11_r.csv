@@ -1,0 +1,10 @@
+name,value
+n,1219
+college_count,16
+wave,12
+items,wb1|wb2|wb3|wb4|wb5
+reverse_item,wb4
+support,1|5
+grid_half_points,-8|-4|-2|-1|0|1|2|4|8
+scenario_half_points,1|-1
+paths,offered_worse|differential

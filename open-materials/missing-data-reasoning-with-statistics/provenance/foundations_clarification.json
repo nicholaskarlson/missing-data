@@ -1,0 +1,13 @@
+{
+  "after_sha256": "0d016a4cfac2548a542a264f6bddb1351f5420d8746ced81595059e789c2bfaf",
+  "amendment_id": "B8-FOUNDATIONS-CONDITIONAL-MEAN-CLARIFICATION",
+  "before_sha256": "ae47a9308685b2981f5e6ce8f11709696f0622785ebaa4ecd5cd1f1e96548eae",
+  "changed_fields": [
+    "group_standardization"
+  ],
+  "formulas_input_data_and_numeric_outputs_changed": false,
+  "prior_spec_path": "provenance/foundations_initial_spec.json",
+  "reason": "distinguish model conditional-mean transport from exact finite-roster equality; the latter can be incompatible with discrete score totals",
+  "result_dependent_method_selection": false,
+  "timing": "after first numerical agreement, before reader authoring and reference acceptance"
+}
