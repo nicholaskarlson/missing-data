@@ -3,11 +3,11 @@
   "edition": "Book 8 reader review; final KDP edition pending",
   "files": {
     ".github/workflows/pages.yml": "6a3b631918a4b91801fe4068b194eead5ee75e1069ba32f4a444e0dfa22d944c",
-    ".github/workflows/verify.yml": "e9e76faef02fa1cba1709abef1ea8aa0478bcc41671507333a0dd449b3e8077d",
+    ".github/workflows/verify.yml": "b07ce371d978dfc386a95bc9c812644aef2128f08f76e75825bc829086a03625",
     ".gitignore": "487fc05011012b271df0fa78cb64aa4ba042d9d1f9e5354085e9f3e2ecc48672",
     "CITATION.cff": "b86c002539eff3e6f351c91b10c7b91dc3393ab1aed834ad0d90691d6372d275",
     "LICENSES.md": "0b042349ec594c6f41d50ccc3539dd64936f1b57f9a29ec00c52b51cc673ec85",
-    "README.md": "9cde5500a4703388c8702a45ad5f03fead8d9e7a4d4eb770fe663ba2682dc4ee",
+    "README.md": "0535ec0ebd2914f49a854eaa0ccf13cdbcddfeafc475666472c64373de4d60e5",
     "index.html": "c0b68303c5248a19c4a7c60603cf7373ffbfbabd23457e0564121e4ce0e7adc0",
     "open-materials/missing-data-reasoning-with-statistics/data/anchor_baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
     "open-materials/missing-data-reasoning-with-statistics/data/anchor_followup.csv": "ab385f2fd760d5f5dd0ef75f0075b91c6e82a98270d329078c9eadcb917a972f",
@@ -219,7 +219,7 @@
     "site/unit10.html": "8076e5ac4568720a8254b75a51d1fa220463f0a9602ea0427f6d71853f1594bf",
     "site/unit11.html": "ad13d325a4cc469e6d8c10c570070c709b89d9cb50e33b9962791e3fe70a0267",
     "site/unit12.html": "a7ed79abb7cada300f41a63ebc7340195bc15a0f969d974dc604919c6a2d5b5c",
-    "site/verify.html": "0f5e604442475a5f5a01f316556413055e9e335687d4d0740469dca406c5ffd8",
+    "site/verify.html": "c6346d5b736df99ed08cf346621b6530e7e1226817af4e2439a6e28709d73088",
     "site/versions.html": "e31745e8b2a87ce68a46d0f76e69307ca90268deeef1603286cf90acc6e73bd6"
   },
   "fresh_history_required": true,
@@ -232,5 +232,10 @@
   "reveal_included": false,
   "schema_version": 1,
   "source_package": "Book 8 public companion preparation v0.16.0",
-  "source_snapshot_sha256": "c4e2bd9209082178fb2af514e71e20acc1cf53a42e5dfecc91032c3c7a09147f"
+  "source_snapshot_sha256": "f44ce713afb60179ae34995e05b6bd5d8957f8f0d87909dd2a038387b9e809a2",
+  "verification_policy": {
+    "normal_hosted_ci": "ordinary boundary, checksums and built site; numerical_executed=false",
+    "recovery": "v0.16.2 preserves the initial public commit and adds one normal correction commit",
+    "release_acceptance": "local sixteen cases through NumPy, plain Python and base R, with exact source and runtime evidence"
+  }
 }

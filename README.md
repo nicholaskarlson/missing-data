@@ -112,11 +112,21 @@ World/registry provenance. Branding and cover rights remain separate.
 
 ## Maintainer checks and website
 
-Normal CI has one companion-status job. It checks integrity and the built site
-on every run; scientific or unknown changes execute all three routes once.
-Documentation-only changes record the narrower scope. No book-PDF renderer or
-compatibility matrix is installed. The separately dispatched Pages workflow
-publishes only the checked ordinary export projection. A local preview build is:
+Normal GitHub CI has one companion-status job. Every push to main and pull
+request checks the ordinary export boundary, checksums and built site using
+Python's standard library. It installs neither NumPy nor R. Its green check
+establishes integrity and site validity; it does not claim numerical execution.
+
+Before releasing scientific or unknown changes, maintainers must run the complete
+collection locally with NumPy 1.26.4 and base R, as shown above. Keep the success
+log, all sixteen-case three-route outputs, runtime versions and the exact source
+commit/tree with the release receipt. A missing R executable or a failed route
+blocks local acceptance. A hosted green check cannot replace that evidence.
+The change classifier is advisory; it does not execute or certify calculations.
+
+No book-PDF renderer or compatibility matrix is installed in normal CI. The
+separately dispatched Pages workflow publishes only the checked ordinary export
+projection. A local preview build is:
 
 ```bash
 python scripts/build_site.py --outdir build/pages
